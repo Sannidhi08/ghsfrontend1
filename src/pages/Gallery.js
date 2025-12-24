@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/gallery";
+const API_URL = `${process.env.REACT_APP_API_URI}api/gallery`;
 
 const excludedImages = [10, 14, 20];
 const photoTitles = {

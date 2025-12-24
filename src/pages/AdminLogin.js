@@ -14,7 +14,7 @@ function AdminLogin() {
     setError("");
 
     try {
-      const res = await axios.post("http://localhost:5000/api/admin/login", {
+      const res = await axios.post("https://ghsbackend-1.vercel.app/api/admin/login", {
         email,
         password,
       });

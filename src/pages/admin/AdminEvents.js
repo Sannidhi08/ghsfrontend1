@@ -16,7 +16,7 @@ function AdminEvents() {
   const [editEventId, setEditEventId] = useState(null);
   const [message, setMessage] = useState("");
 
-  const API_URL = "http://localhost:5000/api/events";
+  const API_URL = `${process.env.REACT_APP_API_URI}api/events`;
 
   // ✅ Fetch all events
   const fetchEvents = async () => {

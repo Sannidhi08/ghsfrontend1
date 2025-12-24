@@ -14,7 +14,7 @@ function AdminGallery() {
 
   const navigate = useNavigate();
   const location = useLocation();
-  const API_URL = "http://localhost:5000/api/gallery";
+  const API_URL = `${process.env.REACT_APP_API_URI}api/gallery`;
 
   // ✅ Fetch all images
   const fetchImages = async () => {
